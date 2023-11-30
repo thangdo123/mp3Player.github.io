@@ -28,6 +28,11 @@ let songs = [
     cover: "./img/what2do.jpg",
     url: "./audio/Dean - What 2 Do.mp3",
   },
+  {
+    name: "HƠI ẢO #11",
+    cover: "./img/HƠI ẢO #11 - Lucin3x",
+    url: "./audio/HƠI ẢO #11 - Lucin3x",
+  },
 ];
 
 myAudio.style.display = "none";
@@ -130,6 +135,14 @@ function songList() {
     <img id="song-pre-pic" src="${song.cover}" alt="" />
     <div id="song-pre-name">${song.name}</div>`;
     songsList.appendChild(newSong);
+    newSong.addEventListener("click", function () {
+      backBtn();
+      songName.innerHTML = song.name;
+      coverImg.src = song.cover;
+      myAudio.src = song.url;
+      myAudio.autoplay = true;
+      pauseIcon.innerHTML = `<i class="bi bi-pause"></i>`;
+    });
   });
 }
 
