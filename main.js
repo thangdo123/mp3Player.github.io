@@ -30,8 +30,8 @@ let songs = [
   },
   {
     name: "HƠI ẢO #11",
-    cover: "./img/HƠI ẢO #11 - Lucin3x",
-    url: "./audio/HƠI ẢO #11 - Lucin3x",
+    cover: "./img/HƠI ẢO 11.jpg",
+    url: "./audio/HƠI ẢO 11 - Lucin3x.mp3",
   },
 ];
 
