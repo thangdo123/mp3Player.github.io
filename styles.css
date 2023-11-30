@@ -133,6 +133,7 @@ audio::-webkit-media-controls-play-button {
   flex-direction: column;
   display: none;
   gap: 5px;
+  font-family: sans-serif;
 }
 
 #song-items {
