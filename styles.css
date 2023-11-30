@@ -60,6 +60,10 @@
   margin-bottom: 10px;
 }
 
+#song-name {
+  font-family: sans-serif;
+}
+
 .text-btn div {
   cursor: pointer;
 }
