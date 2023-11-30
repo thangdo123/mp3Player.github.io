@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mp3-container">
+      <div class="screen-container">
+        <div class="title-name">SONY</div>
+        <div id="song-content" class="screen">
+          <div id="songs-list"></div>
+
+          <div id="song-name"></div>
+          <img id="cover-img" alt="" />
+          <div id="audio-container">
+            <div id="play-pause-icon"><i class="bi bi-play"></i></div>
+            <div id="start-time">0:00</div>
+            <div id="slider-container">
+              <input id="slider" type="range" min="0" max="190" value="0" />
+            </div>
+            <div id="end-time"></div>
+          </div>
+          <audio id="audio" controls></audio>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <div class="text-btn">
+          <div onclick="homeBtn()">HOME</div>
+          <div onclick="backBtn()">BACK</div>
+        </div>
+        <div class="arrow-btn">
+          <i class="bi bi-caret-up-fill" id="up"></i>
+          <i class="bi bi-caret-down-fill" id="down"></i>
+          <i class="bi bi-caret-right-fill" id="right"></i>
+          <i class="bi bi-caret-left-fill" id="left"></i>
+          <div class="play-btn" id="play-btn">
+            <i class="bi bi-play-fill"></i> <i class="bi bi-pause-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

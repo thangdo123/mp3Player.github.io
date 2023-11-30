@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mp3-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #6e6e6e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #424242;
+}
+
+.screen-container {
+  padding: 20px;
+  border-radius: 14px;
+  background-color: #0f0f0f;
+  gap: 10px;
+}
+
+.title-name {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #b1b1b1;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.screen {
+  height: 250px;
+  border-radius: 8px;
+  background-color: #6f6f6f;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  flex-direction: column;
+}
+
+#cover-img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  padding: 16px;
+}
+
+.text-btn {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.text-btn div {
+  cursor: pointer;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  border: 1px solid black;
+  border-radius: 999px;
+  position: relative;
+}
+
+.arrow-btn i {
+  cursor: pointer;
+}
+
+.play-btn {
+  margin: 50px;
+  padding: 30px 20px;
+  border: 1px solid black;
+  border-radius: 999px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+#up {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0;
+}
+
+#down {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+#right {
+  position: absolute;
+  right: 0;
+}
+
+#left {
+  position: absolute;
+  left: 0;
+}
+
+#audio {
+  width: 100%;
+  height: 20px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #6f6f6f;
+}
+
+audio::-webkit-media-controls-play-button {
+  display: none;
+}
+
+#songs-list {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  gap: 5px;
+}
+
+#song-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+}
+
+#song-pre-pic {
+  flex: 1;
+  width: 10%;
+}
+
+#song-pre-name {
+  flex: 9;
+}
+
+#audio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+}
+
+#play-pause-icon {
+  font-size: 20px;
+  flex: 2;
+}
+
+#slider-container {
+  flex: 8;
+}
+
+#slider {
+  -webkit-appearance: none;
+  background: white;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 18px;
+  background: black;
+  cursor: pointer;
+}
