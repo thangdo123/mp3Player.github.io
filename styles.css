@@ -166,6 +166,7 @@ audio::-webkit-media-controls-play-button {
 
 #slider-container {
   flex: 8;
+  margin: 0px 4px;
 }
 
 #slider {
