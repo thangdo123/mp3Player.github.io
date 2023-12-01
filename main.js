@@ -127,7 +127,7 @@ playBtn.addEventListener("click", playPause);
 
 function songList() {
   songsList.innerHTML = "";
-  songs.forEach((song) => {
+  songs.forEach((song, index) => {
     const newSong = document.createElement("div");
     newSong.id = "song-items";
 
@@ -142,6 +142,7 @@ function songList() {
       myAudio.src = song.url;
       myAudio.autoplay = true;
       pauseIcon.innerHTML = `<i class="bi bi-pause"></i>`;
+      currentSong = index;
     });
   });
 }
